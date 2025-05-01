@@ -1,0 +1,81 @@
+/* Reset */
+body, h1, h2, p, ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Helvetica Neue', sans-serif;
+    line-height: 1.6;
+    background-color: #f7f9fc;
+    color: #333;
+    padding: 20px;
+  }
+  
+  header {
+    background-color: #005bac;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+  header h1 {
+    font-size: 28px;
+    margin-bottom: 5px;
+  }
+  
+  .university {
+    font-size: 16px;
+    color: #cde0f7;
+  }
+  
+  .student_year {
+    font-size: 16px;
+    color: #cde0f7;
+  }
+  section {
+    margin-bottom: 30px;
+  }
+  
+  h2 {
+    color: #005bac;
+    border-bottom: 2px solid #005bac;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    font-size: 22px;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  ul li {
+    margin-bottom: 10px;
+  }
+  
+  a {
+    color: #0073e6;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 14px;
+    color: #777;
+  }
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .HK img {
+    border-radius: 50%; /* 丸くしたい場合（任意） */
+    object-fit: cover;
+  }  
