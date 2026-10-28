@@ -3,88 +3,133 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>鈴木 琴音 | Kotone Suzuki</title>
+    <meta name="description" content="香川大学大学院 創発科学研究科 鈴木琴音のポートフォリオ。自然言語処理・サジェスト提示システムの研究。">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <div class="header-container">
-          <div class="text-block">
-            <h1>鈴木 琴音（Kotone Suzuki）</h1>
-            <p class="university">所属大学：香川大学大学院 創発科学研究科（Kagawa University）</p>
-          </div>
-          <div class="HK">
-            <img src="pokemon.jpg" alt="my_profile_image" width="200px" height="200px">
-          </div>
+    <header class="hero">
+        <div class="hero-inner">
+            <img class="avatar" src="pokemon.jpg" alt="プロフィール画像" width="160" height="160">
+            <div class="hero-text">
+                <h1>鈴木 琴音 <span class="name-en">Kotone Suzuki</span></h1>
+                <p class="affiliation">香川大学大学院 創発科学研究科<span class="sep">/</span><span class="nowrap">Kagawa University</span></p>
+                <ul class="links">
+                    <li>
+                        <a class="pill" href="https://github.com/hyphen0322" target="_blank" rel="noopener">
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12a11.5 11.5 0 0 0 7.86 10.92c.58.1.79-.25.79-.56v-2c-3.2.7-3.87-1.37-3.87-1.37-.53-1.33-1.28-1.69-1.28-1.69-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.18-3.09-.12-.29-.51-1.46.11-3.04 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.62 1.58.23 2.75.11 3.04.74.81 1.18 1.83 1.18 3.09 0 4.41-2.69 5.38-5.25 5.67.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/></svg>
+                            GitHub
+                        </a>
+                    </li>
+                    <li>
+                        <a class="pill" href="https://x.com/oott__cs" target="_blank" rel="noopener">
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.24 2.25h3.31l-7.23 8.26 8.5 11.24h-6.66l-5.21-6.82-5.97 6.82H1.67l7.73-8.84L1.25 2.25h6.83l4.71 6.23 5.45-6.23Zm-1.16 17.52h1.83L7.08 4.13H5.12l11.96 15.64Z"/></svg>
+                            X (Twitter)
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
-      </header>
+    </header>
 
-    <section id="accounts">
-    <h2>アカウント</h2>
-    <ul>
-        <li><a href="https://github.com/hyphen0322" target="_blank">GitHub</a></li>
-        <li><a href="https://x.com/oott__cs" target="_blank">X（Twitter）</a></li>
-    </ul>
-    </section>
+    <main class="container">
+        <div class="grid">
+            <section id="research" class="card">
+                <h2>研究内容</h2>
+                <p>自然言語処理を中心に、ローカルドメインにおけるサジェスト提示システムに関する研究を行っています。</p>
+                <ul class="tags">
+                    <li>自然言語処理</li>
+                    <li>クエリサジェスト</li>
+                    <li>情報検索</li>
+                </ul>
+            </section>
 
-    <section id="research">
-    <h2>研究内容</h2>
-    <p>
-        自然言語処理を中心に、ローカルドメインにおけるサジェスト提示システムに関する研究を行っています。
-        
-    </p>
-    </section>
+            <section id="experience" class="card">
+                <h2>インターンシップ等</h2>
+                <ul class="experience">
+                    <li>
+                        <p class="meta">2025/08 – 2025/09 · 4 weeks</p>
+                        <p class="org">NTT R&amp;D</p>
+                        <p>LLMを用いたパーソナライズド・レコメンデーション技術の検討</p>
+                    </li>
+                    <li>
+                        <p class="meta">2025/09 · 3 weeks</p>
+                        <p class="org">共同通信社</p>
+                        <p>法令文解釈システム きじさめ
+                            <a class="btn" href="https://note.com/kyodonews_jinji/n/n765219e30d8e?sub_rt=share_sb" target="_blank" rel="noopener">tech blog</a>
+                        </p>
+                    </li>
+                </ul>
+            </section>
+        </div>
 
-    <section id="papers">
-    <h2>発表論文</h2>
-    <ul>
-        <li>
-            <span><u>鈴木 琴音</u> , 安藤 一秋. <strong>「特定文書のクエリ補完に向けたGoogleサジェストの分析」</strong>電気・電子・情報関係学会四国支部連合大会. 2024/09.
-                <a href="papers/Sikokusibu_2024.pdf" target="_blank">paper</a><br>
-            
-    </li>
-        <li>
-            <span><u>鈴木 琴音</u> , 岩本 和真 , 安藤 一秋.<strong>「特定ドメイン向けローカル検索用のサジェスト提示に向けた分析」</strong>言語処理学会第31回年次大会(NLP2025). 2025/03.
-            <a href="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/P8-9.pdf" target="_blank">paper</a><br>
-    </li>
-        <li>
-            <span><u>鈴木 琴音</u> , 岩本 和真 , 安藤 一秋.<strong>「ローカル検索用サジェスト生成に向けたユーザ属性とドメイン文書の語彙分析」</strong>第24回情報科学技術フォーラム(FIT2025）. 2025/09.
-		    <a href="papers/FIT_2025.pdf" target="_blank">paper</a><br>
-    </li>
-    </li>
-        <li>
-            <span><u>鈴木 琴音</u> , 岩本 和真 , 安藤 一秋.<strong>「大規模検索ログを用いない特定ドメイン向けサジェスト手法　― 単語分散表現とトピック別出現頻度の統合 ―　」</strong>言語処理学会第32回年次大会(NLP2026). 2026/03.
-		    <a href="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/P1-18.pdf" target="_blank">paper</a><br>
-    </li>
-    </li>
-        <li>
-            <span><u>鈴木 琴音</u> , 岩本 和真 , 安藤 一秋.<strong>「大規模検索ログに依存しない特定ドメイン向けサジェスト手法」</strong>人工知能学会全国大会(第40回)(JSAI2026). 2026/06.
-            <a href="papers/JSAI_2026.pdf" target="_blank">paper</a>
-            <a href="https://pub.confit.atlas.jp/ja/event/jsai2026/presentation/2N4-GS-10y-05" target="_blank">URL</a>
-    </li>
+        <section id="papers" class="card">
+            <h2>発表論文</h2>
+            <ol class="timeline">
+                <li>
+                    <span class="date">2026/09</span>
+                    <p class="title">大規模検索ログに依存しない特定ドメインにおける統計的サジェスト手法 ―大規模言語モデルとの性能比較―</p>
+                    <p class="authors"><span class="me">鈴木 琴音</span>, 安藤 一秋</p>
+                    <p class="venue"><span class="badge">FIT2026</span>第25回情報科学技術フォーラム</p>
+                    <p class="actions">
+                        <a class="btn" href="https://www.gakkai-web.net/fit/program_web/data/html/program/d.html" target="_blank" rel="noopener">URL</a>
+                    </p>
+                </li>
+                <li>
+                    <span class="date">2026/06</span>
+                    <p class="title">大規模検索ログに依存しない特定ドメイン向けサジェスト手法</p>
+                    <p class="authors"><span class="me">鈴木 琴音</span>, 岩本 和真, 安藤 一秋</p>
+                    <p class="venue"><span class="badge">JSAI2026</span>人工知能学会全国大会（第40回）</p>
+                    <p class="actions">
+                        <a class="btn" href="papers/JSAI_2026.pdf" target="_blank" rel="noopener">PDF</a>
+                        <a class="btn" href="https://pub.confit.atlas.jp/ja/event/jsai2026/presentation/2N4-GS-10y-05" target="_blank" rel="noopener">URL</a>
+                    </p>
+                </li>
+                <li>
+                    <span class="date">2026/03</span>
+                    <p class="title">大規模検索ログを用いない特定ドメイン向けサジェスト手法 ― 単語分散表現とトピック別出現頻度の統合 ―</p>
+                    <p class="authors"><span class="me">鈴木 琴音</span>, 岩本 和真, 安藤 一秋</p>
+                    <p class="venue"><span class="badge">NLP2026</span>言語処理学会第32回年次大会</p>
+                    <p class="actions">
+                        <a class="btn" href="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/P1-18.pdf" target="_blank" rel="noopener">PDF</a>
+                    </p>
+                </li>
+                <li>
+                    <span class="date">2025/09</span>
+                    <p class="title">ローカル検索用サジェスト生成に向けたユーザ属性とドメイン文書の語彙分析</p>
+                    <p class="authors"><span class="me">鈴木 琴音</span>, 岩本 和真, 安藤 一秋</p>
+                    <p class="venue"><span class="badge">FIT2025</span>第24回情報科学技術フォーラム</p>
+                    <p class="actions">
+                        <a class="btn" href="papers/FIT_2025.pdf" target="_blank" rel="noopener">PDF</a>
+                    </p>
+                </li>
+                <li>
+                    <span class="date">2025/03</span>
+                    <p class="title">特定ドメイン向けローカル検索用のサジェスト提示に向けた分析</p>
+                    <p class="authors"><span class="me">鈴木 琴音</span>, 岩本 和真, 安藤 一秋</p>
+                    <p class="venue"><span class="badge">NLP2025</span>言語処理学会第31回年次大会</p>
+                    <p class="actions">
+                        <a class="btn" href="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/P8-9.pdf" target="_blank" rel="noopener">PDF</a>
+                    </p>
+                </li>
+                <li>
+                    <span class="date">2024/09</span>
+                    <p class="title">特定文書のクエリ補完に向けたGoogleサジェストの分析</p>
+                    <p class="authors"><span class="me">鈴木 琴音</span>, 安藤 一秋</p>
+                    <p class="venue"><span class="badge">四国支部</span>電気・電子・情報関係学会四国支部連合大会</p>
+                    <p class="actions">
+                        <a class="btn" href="papers/Sikokusibu_2024.pdf" target="_blank" rel="noopener">PDF</a>
+                    </p>
+                </li>
+            </ol>
+        </section>
+    </main>
 
-    </li>
-        <li>
-            <span><u>鈴木 琴音</u> , 安藤 一秋.<strong>「大規模検索ログに依存しない特定ドメインにおける統計的サジェスト手法-大規模言語モデルとの性能比較-」</strong>第25回情報科学技術フォーラム(FIT2026）. 2026/09.
-            <!-- <a href="papers/JSAI_2026.pdf" target="_blank">paper</a> -->
-            <a href="https://www.gakkai-web.net/fit/program_web/data/html/program/d.html" target="_blank">URL</a>
-    </li>
-    </ul>
-    </section>
-    
-    <section id="site">
-      <h2>インターンシップ等</h2>
-      <ul>
-        <li>
-          <span>2025/08 - 2025/09 (4weeks) インターンシップ @<strong>NTT R＆D</strong> 「LLMを用いたパーソナライズド・レコメンデーション技術の検討」<br>
-        </li>
-        <li>
-          <span>2025/09 - 2025/09 (3weeks) インターンシップ @<strong>共同通信社</strong>
-          「法令文解釈システム きじさめ」<a href="https://note.com/kyodonews_jinji/n/n765219e30d8e?sub_rt=share_sb">tech blog</a><br>
-        </li>
-    </section>
-
-
+    <footer>
+        <p>&copy; 2026 Kotone Suzuki</p>
+    </footer>
 </body>
 </html>
-
