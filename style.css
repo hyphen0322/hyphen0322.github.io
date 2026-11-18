@@ -318,6 +318,12 @@ a:hover {
   font-weight: 700;
 }
 
+.award {
+  margin-left: 8px;
+  color: #b45309;
+  font-weight: 700;
+}
+
 .actions {
   margin-top: 6px;
 }
